@@ -81,9 +81,8 @@ Ideal para uso directo desde el mostrador del taller
 Tecnologías Utilizadas:
 Laravel
 PHP
-Blade
-MySQL
-Bootstrap
+Herd
+Postgres
 HTML5 y CSS3
 
 Beneficios para el Taller:
@@ -96,3 +95,5 @@ Historial seguro y confiable
 Caso de Uso:
 “Llegan clientes, dejan sus equipos y se registra digitalmente el equipo, el problema y los datos del dueño.
 El sistema guarda la fecha automáticamente, permite corregir errores y mantiene el historial para futuras consultas.”
+
+Link del Proyecto: https://github.com/JoseDanielZ/Desarrolo---Caso-1---Taller-de-Celulares
