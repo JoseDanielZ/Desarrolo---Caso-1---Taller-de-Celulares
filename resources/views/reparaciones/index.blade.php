@@ -69,6 +69,4 @@ button:hover { background: #c82333; }
 @else
 <p style="text-align: center; color: #6c757d; font-size: 18px;">No hay reparaciones registradas.</p>
 @endif
-
-<a href="{{ route('reparaciones.create') }}" class="nueva">Nueva Reparación</a>
 @endsection
