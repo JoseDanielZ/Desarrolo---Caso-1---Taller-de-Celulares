@@ -28,6 +28,27 @@ Gestionar información de clientes
 Mantener un historial de reparaciones sin eliminar registros
 Acceder al sistema desde cualquier dispositivo
 
+Base de Datos Formato:
+
+| Campo            | Tipo de dato                | Descripción                                    |
+| ---------------- | --------------------------- | ---------------------------------------------- |
+| id               | bigint (PK)                 | Identificador único de la reparación           |
+| tipo_equipo      | character varying (255)     | Tipo de equipo (celular, tablet, laptop, etc.) |
+| marca            | character varying (255)     | Marca del equipo                               |
+| modelo           | character varying (255)     | Modelo del equipo                              |
+| problema         | text                        | Descripción del problema reportado             |
+| nombre_cliente   | character varying (255)     | Nombre del cliente                             |
+| telefono_cliente | character varying (255)     | Teléfono de contacto del cliente               |
+| estado           | character varying (255)     | Estado actual de la reparación                 |
+| fecha_ingreso    | timestamp without time zone | Fecha y hora de ingreso del equipo             |
+| fecha_entrega    | date                        | Fecha estimada o real de entrega               |
+| costo            | numeric (10,2)              | Costo de la reparación                         |
+| observaciones    | text                        | Observaciones técnicas del técnico             |
+| created_at       | timestamp without time zone | Fecha de creación del registro                 |
+| updated_at       | timestamp without time zone | Fecha de última actualización                  |
+| deleted_at       | timestamp without time zone | Fecha de eliminación lógica (soft delete)      |
+
+
 Características Principales
 
 Funcionalidades Generales:
