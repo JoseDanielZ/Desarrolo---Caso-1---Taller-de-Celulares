@@ -1,66 +1,98 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+TecniRápido – Sistema de Gestión de Taller de Reparación - Solucion Jose Zumarraga
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Sistema web desarrollado con Laravel para la gestión integral de reparaciones de equipos electrónicos en el taller TecniRápido.
+La aplicación digitaliza el proceso de registro y seguimiento de reparaciones, reemplazando el uso de cuadernos físicos.
 
-## About Laravel
+Cliente:
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+TecniRápido – Taller de Reparación de Celulares
+Usuario principal: Don Carlos (técnico principal)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Contexto del Problema:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Actualmente, el taller registra los equipos de forma manual en un cuaderno físico, lo cual genera múltiples inconvenientes:
+Pérdida o deterioro del cuaderno
+Registros con letra ilegible
+Dificultad para conocer el estado real de una reparación
+Falta de historial confiable ante reclamos
+No accesible desde dispositivos móviles
 
-## Learning Laravel
+Don Carlos necesita una solución digital, simple y accesible desde su celular, que le permita registrar los equipos, conocer su estado y mantener un historial seguro.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Solución Implementada:
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+TecniRápido es un sistema web que permite:
+Registrar los equipos que ingresan al taller
+Realizar seguimiento del estado de cada reparación
+Gestionar información de clientes
+Mantener un historial de reparaciones sin eliminar registros
+Acceder al sistema desde cualquier dispositivo
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Características Principales
 
-## Laravel Sponsors
+Funcionalidades Generales:
+CRUD completo (Crear, Leer, Actualizar y Eliminar registros)
+Registro automático de la fecha de ingreso
+Sistema web responsive
+Validaciones en servidor
+Mensajes flash para confirmación de acciones
+Gestión de Reparaciones
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Cada registro de reparación incluye:
 
-### Premium Partners
+Tipo de equipo:
+Marca
+Modelo
+Descripción del problema
+Fecha de ingreso automática
+Estado de la reparación
+Observaciones técnicas
+Estados de Reparación
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+El sistema maneja los siguientes estados:
 
-## Contributing
+Pendiente de Revisión
+En Revisión
+En Reparación
+Listo para Entregar
+Sin Arreglo
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Estos estados permiten un control claro y ordenado del flujo de trabajo.
 
-## Code of Conduct
+Gestión de Clientes
+Nombre del cliente
+Teléfono de contacto
+Asociación directa con los equipos ingresados
+Información disponible para contacto o reclamos
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Dashboard:
+Total de equipos registrados
+Cantidad de reparaciones por estado
+Vista rápida del trabajo pendiente
+Historial de Reparaciones
+Los registros no se eliminan físicamente
+Se mantiene un historial completo para reclamos, consultas futuras y control administrativo
 
-## Security Vulnerabilities
+Accesibilidad:
+Diseño responsive
+Funciona correctamente en celulares, tablets y computadoras
+Ideal para uso directo desde el mostrador del taller
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Tecnologías Utilizadas:
+Laravel
+PHP
+Blade
+MySQL
+Bootstrap
+HTML5 y CSS3
 
-## License
+Beneficios para el Taller:
+Eliminación del registro manual en cuadernos
+Información clara y legible
+Control total del estado de las reparaciones
+Acceso rápido desde cualquier dispositivo
+Historial seguro y confiable
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Caso de Uso:
+“Llegan clientes, dejan sus equipos y se registra digitalmente el equipo, el problema y los datos del dueño.
+El sistema guarda la fecha automáticamente, permite corregir errores y mantiene el historial para futuras consultas.”
