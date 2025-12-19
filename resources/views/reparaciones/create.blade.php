@@ -34,11 +34,11 @@ form { max-width: 600px; margin: 0 auto; background: #f8f9fa; padding: 20px; bor
     </select>
 
     <label>Marca</label>
-    <input type="text" name="marca" required placeholder="Ej: Samsung">
+    <input type="text" name="marca" required>
     @error('marca') <small style="color: red;">{{ $message }}</small> @enderror
 
     <label>Modelo</label>
-    <input type="text" name="modelo" placeholder="Ej: Galaxy S21">
+    <input type="text" name="modelo">
     @error('modelo') <small style="color: red;">{{ $message }}</small> @enderror
 
     <label>Problema</label>
@@ -65,15 +65,15 @@ form { max-width: 600px; margin: 0 auto; background: #f8f9fa; padding: 20px; bor
         <option value="sin_arreglo">Sin Arreglo</option>
     </select>
 
-    <label>Costo (opcional)</label>
+    <label>Costo</label>
     <input type="number" name="costo" step="0.01" placeholder="0.00">
     @error('costo') <small style="color: red;">{{ $message }}</small> @enderror
 
-    <label>Fecha Entrega (opcional)</label>
+    <label>Fecha Entrega</label>
     <input type="date" name="fecha_entrega">
     @error('fecha_entrega') <small style="color: red;">{{ $message }}</small> @enderror
 
-    <label>Observaciones (opcional)</label>
+    <label>Observaciones</label>
     <textarea name="observaciones" placeholder="Notas adicionales"></textarea>
 
     <button type="submit">Guardar</button>

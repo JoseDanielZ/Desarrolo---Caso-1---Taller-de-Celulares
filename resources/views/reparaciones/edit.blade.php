@@ -65,15 +65,15 @@ form { max-width: 600px; margin: 0 auto; background: #f8f9fa; padding: 20px; bor
         <option value="sin_arreglo" {{ $reparacione->estado == 'sin_arreglo' ? 'selected' : '' }}>Sin Arreglo</option>
     </select>
 
-    <label>Costo (opcional)</label>
+    <label>Costo</label>
     <input type="number" name="costo" value="{{ $reparacione->costo }}" step="0.01">
     @error('costo') <small style="color: red;">{{ $message }}</small> @enderror
 
-    <label>Fecha Entrega (opcional)</label>
+    <label>Fecha Entrega</label>
     <input type="date" name="fecha_entrega" value="{{ $reparacione->fecha_entrega }}">
     @error('fecha_entrega') <small style="color: red;">{{ $message }}</small> @enderror
 
-    <label>Observaciones (opcional)</label>
+    <label>Observaciones</label>
     <textarea name="observaciones">{{ $reparacione->observaciones }}</textarea>
 
     <button type="submit">Actualizar</button>
